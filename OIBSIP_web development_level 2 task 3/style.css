@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #002b45;
+  color: #fff;
+}
+
+.header {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 30px 50px;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.form-card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-card input,
+.form-card textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.save-btn {
+  background: #28a745;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.save-btn:hover {
+  background: #218838;
+}
+
+
+.task-list {
+  flex: 1;
+  max-width: 700px;
+  width: 100%;
+}
+
+.task-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 10px;
+}
+
+.task-table th {
+  text-align: left;
+  padding: 8px 10px;
+  font-size: 16px;
+}
+
+
+.task-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  padding: 12px 20px;
+  color: black;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.task-title {
+  flex: 1;
+  font-weight: 500;
+}
+
+.task-desc {
+  flex: 2;
+  padding-left: 10px;
+  color: #444;
+}
+
+.delete-btn {
+  background-color: #dc3545;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background-color: #b02a37;
+}

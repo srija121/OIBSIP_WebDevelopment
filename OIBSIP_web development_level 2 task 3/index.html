@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>To-Do List Web App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1 class="header">To-Do List Web App</h1>
+
+  <div class="container">
+    <form class="form-card" onsubmit="addTask(event)">
+      <input type="text" id="title" placeholder="Title" required />
+      <textarea id="description" placeholder="Description" required></textarea>
+      <button type="submit" class="save-btn">Save</button>
+    </form>
+
+    <div class="task-list">
+      <table class="task-table">
+        <thead>
+          <tr class="table-header">
+            <th>Title</th>
+            <th>Description</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+      </table>
+
+      <div id="taskContainer">
+        <!-- Task cards go here -->
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
